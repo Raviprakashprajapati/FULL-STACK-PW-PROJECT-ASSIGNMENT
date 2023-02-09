@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Bree Serif', serif;
+  box-sizing: border-box;
+}
+
+body{
+
+
+}
+
+nav{
+  padding: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+
+  display: flex;
+  margin-left: -300px;
+
+}
+
+
+
+nav ul li a{
+
+  padding-right:50px ;
+  color: white;
+  text-decoration: none;
+}
+
+.line{
+  width: 1px;
+  height: 50px;
+  margin-left: -300px;
+  background-color: #fff;
+}
+
+nav img{
+  width: 90px;
+  height: 36px;
+}
+
+nav button{
+  color: #000000;
+  font-weight: 600;
+  border: none;
+  background: #d930e6;
+  border-radius: 6px;
+  cursor: pointer;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 25px;
+}
+
+nav button:hover{
+  background-color: beige;
+  color: #000000;
+}
+
+section{
+  background-image: url("assests/main.png");
+  background-size: contain;
+  background-attachment: fixed;
+
+  height: 550px;
+  text-align: center;
+ 
+}
+
+.section-content h1{
+
+  padding-top: 50px;
+  font-size: 60px;
+  color: rgb(255, 254, 253);
+
+}
+
+.section-content p{
+  padding: 10px 0;
+  font-size: 20px;
+  color: white;
+}
+
+.section-content button{
+  margin-top: 20px;
+
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  background: #be3ac7;
+  letter-spacing: 3px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-style: normal;
+  font-size: 23px;
+  line-height: 24px;
+  padding: 6px 30px;
+  padding: 12px;
+}
+
+.section-content button:hover{
+  background-color: rgb(238, 255, 0);
+  color: rgb(0, 0, 0);
+}
