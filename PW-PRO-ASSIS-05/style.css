@@ -1,0 +1,235 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    background-color:  #111827;
+    color: wheat;
+
+}
+
+body{
+    margin: 0 10%;
+}
+
+header nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+
+}
+
+.nav-ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+header nav img{
+    display: none;
+}
+
+.nav-ul{
+    display: flex;
+    
+}
+
+.nav-ul li{
+    margin-right:60px ;
+}
+
+.nav-home{
+    background-color: purple;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+
+
+/* SECTION---------------------------------- */
+
+section{
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.section-left{
+    width: 40%;
+
+}
+
+.section-left h3{ font-size: 30px; }
+.section-left h1{ font-size: 60px;}
+.section-left p{ font-size: 25px;}
+
+.section-left img{
+    height: 70px;
+    width: 70px;
+
+}
+
+
+/* SECTION RIGHT */
+
+
+.section-right img{
+    height: 300px;
+    width: 300px;
+
+}
+
+
+
+
+
+
+/* MAI PROJECTS------------------------------ */
+main{ margin-top: 80px;}
+
+.main-heading h1{
+    text-align: center;
+    text-shadow: 5px 1px purple;
+    font-size: 50px;
+}
+
+.horizantal-line{
+    margin-top: 10px;
+    height: 10px;
+    width: 25%;
+    background-color: purple;
+    border-radius: 20px;
+  
+
+    margin-left: 390px;
+ 
+  
+}
+
+
+.main-projects { margin: 0 20%;}
+
+.main-projects p{ 
+    text-align: center;
+    font-weight: 600;
+    color: aquamarine;
+}
+.main-projects img{
+    margin: 4px;
+    height: 300px;
+    width: 300px;
+}
+
+.main-projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+/* FOOTER------------------------------- */
+
+footer{ margin-top: 70px;}
+
+.footer-heading h1{
+    text-align: center;
+    color: white;
+    text-shadow: 5px 1px purple;
+    font-size: 50px;
+
+}
+
+
+.footer-inside{ margin-left: 42%;}
+
+.footer-inside img{
+    margin-top: 3%;
+
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERY=========================================================================================== */
+
+@media screen and (max-width: 576px)
+{
+    .nav-ul{
+        display: none;
+    }
+
+    header nav img{ 
+
+        display: inline;
+        height: 30px;
+        width: 30px;
+        margin-right: 350px; 
+    } 
+
+
+    .section-left{
+    
+        margin-bottom: 60px;
+        text-align: center;
+        
+    }
+
+    .section-left h3{ font-size: 30px; }
+    .section-left h1{ font-size: 50px;}
+    .section-left p{ font-size: 15px;}
+
+    .section-right{
+        display: block;
+      
+        height: 100px;
+        width: 300px;
+        margin-bottom: 180px;
+    }
+
+
+    .main-heading h1{ font-size: 40px; text-align: center; }
+    .horizantal-line{ margin-left: 50px;
+        margin-top: -5px;
+    
+    padding: 0 80px;
+    }
+
+    .main-projects img{
+
+        height: 200px;
+        width: 200px;
+    }
+    
+
+    .footer-heading h1{
+        font-size: 40px;
+    }
+
+    .footer-line{
+   
+        padding: 0 35px;
+        margin-left: 100px;
+        margin-top: -5px;
+        margin-bottom: 20px;
+
+    }
+
+    .footer-inside{
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+
+}
