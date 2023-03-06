@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add list in ol</title>
+    <style>
+        body {
+            margin: 20px 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: black;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>What you learn</button>
+    <ul></ul>
+
+
+
+    <script>
+
+        const btn = document.querySelector("button")
+        const ul = document.querySelector("ul")
+
+        const item = ["HTML and Semantics",
+            "Starting with CSS",
+            "Working Template",
+            "Mobile responsive webpages",
+            " Grid and Flex - box in CSS",
+            "Projects using HTML & CSS",
+            "Version Control and Git",
+            "Getting Started with JavaScript",
+            " Advance JavaScript",
+            " Working with DOM",
+            " Making Projects using HTML, CSS and JavaScript",
+            " Understanding Fundamental of Computer Science",
+            " Getting Started with Database",
+            " Understanding the Database",
+            "  Starting with NodeJS and Express",
+            " Understanding React and its Fundamentals",
+            " Understanding Hooks and Routers",
+            " Starting and Completing Full Fledge Projects"]
+
+            
+            let index = 0
+            btn.addEventListener("click", () => {
+            const li = document.createElement("li")
+
+            if (index < item.length) {
+
+                li.innerText = item[index]
+                ul.appendChild(li)
+                index++
+
+            }
+
+            else { alert("All items is Display") }
+
+
+
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

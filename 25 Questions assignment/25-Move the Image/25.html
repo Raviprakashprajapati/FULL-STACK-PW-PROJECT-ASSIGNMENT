@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move the Image</title>
+    <style>
+
+        body{
+            height: 1000px;
+        }
+
+        img{
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="my-image" src="gokuuu.jpg" alt="My Image">
+
+    <script>
+        // Get the image element
+const image = document.getElementById("my-image");
+
+// Set the initial position of the image
+let xPos = 0;
+let yPos = 0;
+
+// Add an event listener for keydown events
+document.addEventListener("keydown", (event) => {
+  // Get the key code of the pressed key
+  const keyCode = event.keyCode;
+
+  // Move the image according to the arrow key input
+  switch (keyCode) {
+    case 37: // left arrow
+      xPos -= 10;
+      break;
+    case 38: // up arrow
+      yPos -= 10;
+      break;
+    case 39: // right arrow
+      xPos += 10;
+      break;
+    case 40: // down arrow
+      yPos += 10;
+      break;
+    default:
+      return;
+  }
+
+  // Set the new position of the image
+  image.style.left = xPos + "px";
+  image.style.top = yPos + "px";
+});
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: aqua;
+
+        }
+
+        h1{
+            color: aquamarine;
+            /* text-shadow: 2px 2px 2px rgb(255, 170, 11); */
+        }
+       
+
+        
+        input {
+            display: flex;
+            justify-content: center;
+            font-size: 13px;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 2px 2px 2px  rgb(255, 255, 255);
+            border: none;
+            border: 2px solid aquamarine;
+            height: 5vh;
+          
+                overscroll-behavior-block:contain;
+          
+        }
+
+     
+        button {
+            border: none;
+            background-color: aquamarine;
+            font-size: 11px;
+            color: rgb(0, 0, 0);
+            padding: 7px;
+            font-weight: bolder;
+            border-radius: 5px;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button:hover{
+            cursor: pointer;
+            font-weight: bolder;
+            font-size: 12px;
+        }
+
+        ul{
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul li {
+            
+           
+            text-align: justify;
+           text-align-last: center;
+            margin: 10px 0;
+            color: white;
+            font-weight: 800;
+        }
+
+        textarea{
+            height: 100px;
+			padding: 10px;
+			font-size: 16px;
+			line-height: 1.5;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			/* resize: none; */
+			/* overflow: hidden; */
+        }
+
+        </style>
+
+</head>
+
+<body>
+
+    <h1>Todo App</h1>
+
+    <div >
+        <input type="text" id="input" placeholder="Enter a new todo"> <br>
+       
+      
+        <button id="btn">Add Todo</button>
+     
+    </div>
+
+    <div>
+        <ul id="ul" type="none">  </ul>
+    </div>
+
+
+
+    <script src="21.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+
+<body>
+
+    <form id="login">
+
+        <label>Email:</label>
+        <input type="text" id="email-input" name="email" required>
+        <br>
+
+        <label>Password:</label>
+        <input type="password" id="password-input" name="password" required>
+        <br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+    <p id="message"></p>
+
+    <script>
+
+
+        const form = document.querySelector('#login');
+        const emailInput = document.querySelector('#email-input');
+        const passwordInput = document.querySelector('#password-input');
+        const message = document.querySelector('#message');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault()
+
+            const email = emailInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            if (!email.includes('@') || password.length < 8) {
+                message.textContent = 'Invalid email or password!';
+                message.style.color = 'red';
+            } else {
+                message.textContent = 'Valid email and password!';
+                message.style.color = 'green';
+                form.submit();
+            }
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

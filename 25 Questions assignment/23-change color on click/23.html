@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGE COLOR ON CLICK</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <button>CHANGE COLOR</button>
+
+    <script>
+
+        let btn = document.querySelector('button')
+        let color = ["red","white","yellow","aqua","aquamarine","pink"]
+
+        btn.addEventListener("click",()=>{
+            let c = color[Math.floor(Math.random()*color.length)]
+            btn.innerText = c
+            
+            document.body.style.backgroundColor = c 
+
+        })
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

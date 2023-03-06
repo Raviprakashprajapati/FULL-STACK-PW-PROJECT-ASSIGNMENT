@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    </style>
+  
+</head>
+
+<body style="background-color:black">
+
+    <div>
+        <h1 id="h1">The most affordable learning platform</h1>
+        <button id="btn" onclick="toggleHeading()">Toggle Heading Text</button>
+    </div>
+
+
+    <script>
+        let h1 =document.getElementById("h1")
+        let btn =document.getElementById("btn")
+           function toggleHeading(){
+
+            if (h1.innerText == "The most affordable learning platform") {
+                h1.innerText = "PW SKILLS"
+            }
+            else
+            {
+                h1.innerText = "The most affordable learning platform"
+            }
+             
+            }
+
+
+    </script>
+    
+ 
+
+</body>
+
+</html>

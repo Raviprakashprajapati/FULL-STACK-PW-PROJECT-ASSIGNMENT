@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT HIGHLIGTHING</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px;
+            padding: 0;
+        }
+
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, pariatur vero doloremque dignissimos earum, nisi, recusandae beatae similique dolore ut harum molestiae quo voluptatem sint! Officia ex ullam quas architecto suscipit. Pariatur perspiciatis repellat error provident quod labore eius illo voluptatem aliquam culpa ipsum, vel, consequatur cum voluptates ipsa eaque!</p>
+
+    <script>
+        let p = document.querySelector("p")
+        let text = p.textContent
+        
+        let word = text.split(" ")
+       for(let i=0;i<word.length;i++)
+       {
+        if (word[i].length > 8) {
+            const span = document.createElement("span")
+            span.style.backgroundColor = "yellow"
+            span.style.color = "black"
+            span.textContent = word[i]
+            p.innerHTML = p.innerHTML.replace(word[i],span.outerHTML)
+
+        }
+       }
+       
+
+
+    </script>
+    
+</body>
+</html>
