@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWSkills Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PWSkills Blog</h1>
+    </header>
+    <main>
+        <section id="blog-form">
+            <h2>Add a New Blog Post</h2>
+            <form id="add-blog-form">
+                <input type="text" id="blog-title" placeholder="Enter Blog Title" required>
+                <textarea id="blog-content" placeholder="Enter Blog Content" required></textarea>
+                <button type="submit">Add Blog</button>
+            </form>
+        </section>
+        <section id="blog-list">
+            <h2>Existing Blog Posts</h2>
+            <ul id="blog-posts">
+                <!-- Blog posts will be dynamically generated here -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
